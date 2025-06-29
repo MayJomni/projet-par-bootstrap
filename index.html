@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Gourmet - Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .hero-section {
+            background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3') no-repeat center center;
+            background-size: cover;
+            height: 60vh;
+            position: relative;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .menu-item-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .about-img {
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Le Gourmet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Héros -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="hero-overlay"></div>
+        <div class="container text-center text-white position-relative">
+            <h1 class="display-3 fw-bold">Le Gourmet</h1>
+            <p class="lead">Cuisine raffinée dans une ambiance chaleureuse</p>
+            <a href="#menu" class="btn btn-primary btn-lg mt-3">Découvrir notre menu</a>
+        </div>
+    </section>
+
+    <!-- Section Menu -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Notre Menu</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3" class="card-img-top menu-item-img" alt="Plat 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Salade César</h5>
+                            <p class="card-text">Laitue romaine, croûtons, parmesan et sauce césar maison.</p>
+                            <p class="fw-bold">12,50 €</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3" class="card-img-top menu-item-img" alt="Plat 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Boeuf Bourguignon</h5>
+                            <p class="card-text">Boeuf mijoté dans un vin rouge avec carottes, oignons et champignons.</p>
+                            <p class="fw-bold">18,90 €</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3" class="card-img-top menu-item-img" alt="Plat 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Tarte Tatin</h5>
+                            <p class="card-text">Tarte aux pommes caramélisée, servie avec une boule de glace vanille.</p>
+                            <p class="fw-bold">8,50 €</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">À propos de nous</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3" class="img-fluid rounded about-img" alt="Restaurant">
+                </div>
+                <div class="col-md-6">
+                    <h3>Notre histoire</h3>
+                    <p>Fondé en 2010, Le Gourmet est rapidement devenu une référence gastronomique dans la région. Notre chef, formé dans les meilleures écoles de cuisine française, apporte une touche contemporaine aux classiques de la cuisine française.</p>
+                    <p>Nous nous engageons à utiliser des produits locaux et de saison pour offrir à nos clients une expérience culinaire exceptionnelle dans un cadre élégant et chaleureux.</p>
+                    <p>Notre équipe est dévouée à vous offrir un service attentif et personnalisé pour rendre chaque visite mémorable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contactez-nous</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Le Gourmet. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
